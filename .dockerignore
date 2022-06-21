@@ -1,0 +1,20 @@
+# git
+.git
+.gitignore
+
+# ide
+.vscode
+.idea
+
+# docker
+.dockerignore
+.env*
+.build
+.github
+*Dockerfile*
+.gitlab-ci.yml
+heroku.yml
+
+# other
+README.md
+LICENSE
