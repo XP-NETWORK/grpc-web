@@ -11,3 +11,4 @@ WORKDIR /opt/app
 COPY --from=build /go/bin/grpcwebproxy /opt/app/
 COPY entrypoint.sh entrypoint.sh
 ENV PATH="${PATH}:/opt/app"
+ENTRYPOINT [ "./entrypoint.sh" ]
