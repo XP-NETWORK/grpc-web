@@ -9,4 +9,5 @@ RUN go install ./go/grpcwebproxy
 FROM ubuntu:20.04
 WORKDIR /opt/app
 COPY --from=build /go/bin/grpcwebproxy /opt/app/
+COPY entrypoint.sh entrypoint.sh
 ENV PATH="${PATH}:/opt/app"
